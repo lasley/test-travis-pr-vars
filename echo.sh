@@ -1,4 +1,4 @@
-#!/usr/vin/env bash
+#!/usr/bin/env bash
 
 echo $SECRET
 echo $DASHBOARD_SECRET
