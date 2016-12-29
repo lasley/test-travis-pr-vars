@@ -1,0 +1,19 @@
+language: python
+
+python:
+  - "2.7"
+
+env:
+  global:
+   - secure: "Rvr2uN/LQT6P1HDKxUWKSnblvrhinebHILFwv9a5Im0rPxqfthAul4qoF0gjPCUOBUIsY7AI4dp5yrLd2KXZP/R1N7iJA5edsmikty6yrHzzp3Up5CMjC3gmKSDQGnRCZ88u1RCa6GDwO9bDEgzrIPLHypbRXi40+RH3qvXHZMFxnE/6nvYCYoOxQ3U68PYdjhhrZVTtEkwbOkZvyTDgRS8upkkcCtUT+52umtGucivbImiwbNC59V2KSs7bBnTqw+Dxz4A3UPvCJkiZTxuoTxGnbIvUxEBtaHzSQRi88GD4rTND6jGfmsc8QDn7/RMUEjc/HhNKpdie7NK8FiUvMZODLpL9R+k1WbeCDMzvGblL1w2eUPOYYk0fk99CUkprTk2xpx2JMmLhgJrP4p6CQkhoV/5qgSN2BdzD1qMKYmLKiISkGkhWOxs3Rf4J776W/LtYlgVBOYvlcz7ce7QBhHBoe14gblzuTeoA4Ml78blVgg7emnpUD7kP4KzBmFiRuOQQQL8PiX07jpm+yenwTOfNZC7PBecAEWrx6JRTYImtxgiWZghnauvmWfuirrTBJPrOp42cWPa8Evy1VjjaiSUobruM1CD1Dd3eQM0lhD4H63Az6ZKNSwEttcyNx6jcQiY6U0ySc1TclJukCp/qfXmBQaWhS0MMLqWGKKu/W6g="
+  matrix:
+   - TESTS="1"
+
+script:
+  - /bin/bash $TRAVIS_BUILD_DIR/echo.sh
+
+after_script:
+  - /bin/bash $TRAVIS_BUILD_DIR/echo.sh
+
+after_success:
+  - /bin/bash $TRAVIS_BUILD_DIR/echo.sh
